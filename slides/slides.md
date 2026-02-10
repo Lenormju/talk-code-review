@@ -10,9 +10,87 @@
 
 # La facilité trompeuse des code reviews
 
+-v-
+
+## Présentation
+
+Julien Lenormand
+
+<img src="./julien_lenormand_logo.png" alt="" width="786" style="margin-top: 200px" />
+
 ---
 
-# TODO
+# Les code reviews, définition
+
+* examiner du code  <!-- .element: class="fragment" -->
+* souvent, celui des autres  <!-- .element: class="fragment" -->
+
+Voilà  <!-- .element: class="fragment" -->
+
+-v-
+
+## Usages et bienfaits ?
+
+* comprendre  <!-- .element: class="fragment" -->
+* apprendre  <!-- .element: class="fragment" -->
+* partager  <!-- .element: class="fragment" -->
+* ...  <!-- .element: class="fragment" -->
+
+-v-
+
+## C'est pas si simple !
+
+<img src="./code_review.png" class="r-stretch" alt="" />  <!-- .element: class="fragment" -->
+
+[🔗 lien vers la PR sur GitHub 🐱](https://github.com/Lenormju/talk-code-review/pull/1/changes)  <!-- .element: class="fragment" -->
+
+-v-
+
+## Quelques sujets en vrac
+
+<style>
+ .column {
+  float: left;
+  width: 50%;
+}
+</style>
+
+
+<div class="row">
+<div class="column">
+
+* variable d'env :
+  * convention de nommage
+  * checkée tard au runtime
+  * `"false"` est `True` (non-empty)
+* Commit :
+  * Smart
+  * message/title
+  * semantic
+  * signing
+* Process :
+  * DoD/todolist
+  * Test
+  * Doc
+  * `.env.example`
+  * Procédure de déploiement à jour
+
+</div>
+<div class="column">
+
+* Monitoring :
+  * Log
+  * structured
+  * observability metric
+
+* Goal :
+  * (in)complétude
+  * feature flag vs branche/version
+  * besoin métier ? (pas tech)
+  * dette technique ? ticket pour la résorber
+
+</div>
+</div>
 
 ---
 
