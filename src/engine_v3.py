@@ -2,6 +2,7 @@
 Engine v3 - Core game engine implementation
 """
 import math
+import os
 import time
 import random
 from typing import List, Dict, Optional, Tuple
@@ -541,6 +542,8 @@ class Engine:
 
         while self.state == EngineState.RUNNING:
             current_time = time.time()
+            if os.getenv("UNIFORM_DELTA"):
+                continue
             self.delta_time = (current_time - last_time) * self.time_scale
             last_time = current_time
 
